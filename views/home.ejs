@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+    <h1>Home</h1>
+    <p>
+        <%=hsc%>
+    </p>
+    <h1>My Blogs</h1>
+    
+       <%for(let i=0;i<newblog.length;i++){ %>
+        <h1><p><%=newblog[i].composepublish%></p></h1>
+       <% let aryan=newblog[i].composepublish; %>
+       <p><%=newblog[i].composepublish1.substring(0,100)+ "...."%><a href="/posts/<%=aryan%>">Read more</a></p>
+     <% } %> 
+    
+    
+    
+
+    <%- include('partials/footer'); -%>
